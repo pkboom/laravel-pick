@@ -33,7 +33,7 @@ Spin up `pick server`. Actually we use valet. So server is already up and runnin
 
 Open `pick-server.test` and whatever `laravel-pick` sends will appear here.
 
-After installing [pick-server](https://github.com/pkboom/pick-server), use `pick()` in your app.
+After installing `pick-server`, use `pick()` in your app.
 
 ```php
 Route::get('/', function () {
@@ -46,6 +46,7 @@ Route::get('/', function () {
 ```
 
 Result at http://pick-server.test
+
 <img src="image.png" />
 
 ## Testing
