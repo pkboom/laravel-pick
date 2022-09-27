@@ -1,0 +1,54 @@
+{
+    "name": "pkboom/laravel-pick",
+    "description": "",
+    "keywords": [
+        "pkboom",
+        "laravel",
+        "pick"
+    ],
+    "homepage": "https://github.com/pkboom/laravel-pick",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Keunbae Park",
+            "email": "ppotpo@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.3",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pkboom\\Pick\\": "src",
+            "Pkboom\\Pick\\Database\\Factories\\": "database/factories",
+            "0": [
+                "\"Pkboom\\Pick\\\": \"src/\""
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pkboom\\Pick\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/testbench package:test"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pkboom\\Pick\\PickServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
