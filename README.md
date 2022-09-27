@@ -1,45 +1,50 @@
-# Very short description of the package
+# Sorf of `Ray` alternative
 
-[![Latest Stable Version](https://poser.pugx.org/pkboom/laravel-pick/v)](//packagist.org/packages/pkboom/laravel-pick)
-[![Total Downloads](https://poser.pugx.org/pkboom/laravel-pick/downloads)](//packagist.org/packages/pkboom/laravel-pick)
-
-This is where your description should go. Try and limit it to a paragraph or two.
-<img src="/images/demo.png" width="800"  title="demo">
+Drop `pick()` in you code. `Pick` will pick it up and show.
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require pkboom/pick
-```
-
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --provider="Pkboom\Pick\PickServiceProvider" --tag="laravel-pick-migrations"
-php artisan migrate
+composer require pkboom/laravel-pick --dev
 ```
 
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --provider="Pkboom\Pick\PickServiceProvider" --tag="laravel-pick-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
+php artisan vendor:publish --provider="Pkboom\Pick\PickServiceProvider" --tag="pick"
 ```
 
 ## Usage
 
-```php
-$laravel-pick = new Pkboom\Pick();
-echo $laravel-pick->echoPhrase('Hello, pkboom!');
+Download and install `pick server`.
+
+```sh
+git clone https://github.com/pkboom/pick-server.git
+cd pick-server
+composer install
+composer setup
 ```
+
+Spin up `pick server`. Actually we use valet. So server is already up and running.
+
+Open `pick-server.test` and whatever `laravel-pick` sends will appear here.
+
+After installing [laravel-pick](https://github.com/pkboom/laravel-pick), use `pick()` in your app.
+
+```php
+Route::get('/', function () {
+    pick(time());
+    pick(User::first());
+    pick(time());
+
+    return 'calm down';
+});
+```
+
+Result at http://pick-server.test
+<img src="image.png" />
 
 ## Testing
 
