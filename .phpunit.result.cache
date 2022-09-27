@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Pkboom\\Pick\\Tests\\PickTest::it_add_values":4,"Pkboom\\Pick\\Tests\\PickTest::it_runs_garbage_collector":3},"times":{"Pkboom\\Pick\\Tests\\PickTest::true_is_true":0.057,"Pkboom\\Pick\\Tests\\PickTest::it_add_values":0.032,"Pkboom\\Pick\\Tests\\PickTest::it_runs_garbage_collector":0.002}}
