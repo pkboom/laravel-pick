@@ -1,4 +1,4 @@
-# Sorf of `Ray` alternative
+# Sort of `Ray` alternative
 
 Drop `pick()` in you code. `Pick` will pick up anything you pass along and show.
 
