@@ -1,6 +1,6 @@
 # Sorf of `Ray` alternative
 
-Drop `pick()` in you code. `Pick` will pick it up and show.
+Drop `pick()` in you code. `Pick` will pick up anything you pass along and show.
 
 ## Installation
 
