@@ -1,6 +1,6 @@
 # Sort of `Ray` alternative
 
-Drop `pick()` in you code. `Pick` will pick up anything you pass along and show.
+Drop `pick()` in you code. `Pick` will pick up anything you pass along and show on `pick server`.
 
 ## Installation
 
