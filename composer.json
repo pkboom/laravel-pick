@@ -4,7 +4,9 @@
     "keywords": [
         "pkboom",
         "laravel",
-        "pick"
+        "pick",
+        "debug",
+        "dump"
     ],
     "homepage": "https://github.com/pkboom/laravel-pick",
     "license": "MIT",
