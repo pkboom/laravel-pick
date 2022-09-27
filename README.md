@@ -4,8 +4,6 @@ Drop `pick()` in you code. `Pick` will pick up anything you pass along and show.
 
 ## Installation
 
-:
-
 You can install the package via composer:
 
 ```bash
