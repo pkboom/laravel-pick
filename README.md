@@ -31,7 +31,7 @@ Spin up `pick server`. Actually we use `valet`. So server is already up and runn
 
 Open `pick-server.test` and whatever `laravel-pick` sends will appear there.
 
-After installing `pick-server`, use `pick()` in your app.
+After installing `laravel-pick`, use `pick()` in your app.
 
 ```php
 Route::get('/', function () {
