@@ -4,13 +4,15 @@ Drop `pick()` in you code. `Pick` will pick up anything you pass along and show.
 
 ## Installation
 
+:
+
 You can install the package via composer:
 
 ```bash
 composer require pkboom/laravel-pick --dev
 ```
 
-You can publish the config file with:
+You can publish the config file with
 
 ```bash
 php artisan vendor:publish --provider="Pkboom\Pick\PickServiceProvider" --tag="pick"
@@ -31,7 +33,7 @@ Spin up `pick server`. Actually we use valet. So server is already up and runnin
 
 Open `pick-server.test` and whatever `laravel-pick` sends will appear here.
 
-After installing [laravel-pick](https://github.com/pkboom/laravel-pick), use `pick()` in your app.
+After installing [laravel-pick](https://github.com/pkboom/pick-server), use `pick()` in your app.
 
 ```php
 Route::get('/', function () {
