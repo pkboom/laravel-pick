@@ -45,7 +45,7 @@ Route::get('/', function () {
 
 Result at http://pick-server.test
 
-<img src="image.png" />
+<img src="image2.png" />
 
 ## Testing
 
