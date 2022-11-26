@@ -9,5 +9,5 @@ function pick($value)
 
 function pickObject($value)
 {
-    app(Pick::class)->add(serialize($value));
+    pick(serialize($value));
 }
