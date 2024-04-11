@@ -1,6 +1,18 @@
 <?php
 
 use PhpCsFixer\Config;
+use PhpCsFixer\Finder;
+
+$finder = Finder::create()
+    ->in([
+        __DIR__.'/config',
+        __DIR__.'/src',
+        __DIR__.'/tests',
+    ])
+    ->name('*.php')
+    ->notName('*.blade.php')
+    ->ignoreDotFiles(true)
+    ->ignoreVCS(true);
 
 return (new Config())
     ->setRules([
@@ -15,4 +27,5 @@ return (new Config())
         'php_unit_internal_class' => false,
         'global_namespace_import' => true,
         'phpdoc_add_missing_param_annotation' => false,
-    ]);
+    ])
+    ->setFinder($finder);
