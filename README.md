@@ -13,7 +13,7 @@ composer require pkboom/laravel-pick --dev
 You can publish the config file with
 
 ```bash
-php artisan vendor:publish --provider="Pkboom\Pick\PickServiceProvider" --tag="pick"
+php artisan vendor:publish --provider="Pkboom\Pick\PickServiceProvider"
 ```
 
 ## Usage
