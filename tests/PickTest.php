@@ -9,7 +9,7 @@ use Pkboom\Pick\Pick;
 class PickTest extends TestCase
 {
     /** @test */
-    public function it_add_values()
+    public function it_can_add_a_value()
     {
         Http::fake();
 
@@ -35,8 +35,8 @@ class PickTest extends TestCase
         $pick->__destruct();
 
         Http::assertSent(function (Request $request) {
-            return $request->url() === config('pick.pick-server') &&
-                   $request['data'] === '[1]';
+            return $request->url() === config('pick.pick-server')
+                   && '[1]' === $request['data'];
         });
     }
 }

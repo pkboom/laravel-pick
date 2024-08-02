@@ -2,13 +2,15 @@
 
 use Pkboom\Pick\Pick;
 
-function pick($value)
+function pick(...$value)
 {
     if (app()->environment('testing')) {
         return;
     }
 
-    app(Pick::class)->add($value);
+    array_walk($value, function ($value) {
+        app(Pick::class)->add($value);
+    });
 }
 
 function pickObject($value)
